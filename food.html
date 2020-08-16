@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Casa de Amigos | スペインバル・カーサデアミーゴス  food</title>
+
+  <style>
+    @font-face {
+      font-family: 'aaa';
+       src: url(font/XANO-mincho-U32.otf);
+    }
+
+    p {
+      font-family: "aaa";
+      color: #8b030a;
+      font-size: 20px;
+      font-weight: 100;
+      /*-webkit-font-smoothing:none;*/
+       }
+
+  </style>
+
+  <script>
+    $(document).ready(function() {
+      var pagetop = $('.pagetop');
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+          pagetop.fadeIn();
+        } else {
+          pagetop.fadeOut();
+        }
+      });
+      pagetop.click(function() {
+        $('body, html').animate({ scrollTop: 400 }, 500);
+        return false;
+      });
+    });
+  </script>
+
+</head>
+
+<body id="b_food">
+
+  <div class="container">
+  
+  
+  <header>
+  <div class="header">
+  
+  <div class="logo">
+  <a href="top.html"><img src="images/logo.png" width="231" height="48" alt="ロゴ"></a>
+  </div><!--header-->
+  
+    <nav>
+      <div class="gn">
+        <div class="btn_01">
+                    <img src="images/toumei.png" width="64" height="31" alt="ダミー">
+                    </div>
+                    
+                    <div class="btn_01_on">
+                    <a href="top.html"><img src="images/btn_home_after.png" width="113" height="110" alt="01_on"></a>
+                    </div>
+                    
+                    <div class="btn_02">
+                    <img src="images/toumei.png" width="73" height="32" alt="店舗">
+                    </div>
+                    
+                    <div class="btn_02_on">
+                    <a href="tenpo.html"><img src="images/btn_tenpo_after.png" width="113" height="110" alt="01_on"></a>
+                    </div>
+                    
+                    <div class="btn_03">
+                    <img src="images/toumei.png" width="52" height="35" alt="ダミー">
+                    </div>
+                    
+                    <div class="btn_03_on">
+                    <a href="shelly.html"><img src="images/btn_shelly_after.png" width="113" height="110" alt="01_on"></a>
+                    </div>
+                    
+                    <div class="btn_04">
+                    <img src="images/toumei.png" width="57" height="32" alt="フード">
+                    </div>
+                    
+                    <div class="btn_04_on" style="visibility:visible;">
+                    <a href="food.html"><img src="images/btn_food_after.png" width="113" height="110" alt="01_on"></a>
+                    </div>
+                    
+                    <div class="btn_05">
+                    <img src="images/toumei.png" width="128" height="34" alt="ショー">
+                    </div>
+                    
+                    <div class="btn_05_on">
+                    <a href="show.html"><img src="images/btn_show_after.png" width="135" height="110" alt="01_on"></a>
+                    </div>
+                    
+                    <div class="btn_06">
+                    <img src="images/toumei.png" width="74" height="32" alt="アクセス">
+                    </div>
+                    
+                    <div class="btn_06_on">
+                    <a href="access.html"><img src="images/btn_access_after.png" width="113" height="110" alt="01_on"></a>
+                    </div>
+                    
+              </div><!-----------------------------------------------------gn-->
+         </nav>   
+               
+                    
+    <div class="telephone">
+          <img src="images/telephone.png" width="216" height="15" alt="電話番号">
+        </div>
+  
+  
+  
+  
+  
+  </div><!-- header -->
+  
+  </header>
+  
+  
+  <div class="content">
+  
+  
+  
+  <div class="cook">
+  <img src="images/cook.png" width="141" height="335" alt="コック">
+  </div>
+  
+  
+  
+  <div class="food_menu">
+  <img src="images/food_list.png" width="349" height="62" alt="メニュー">
+  </div>
+  
+  
+  
+  
+  <div class="setsumei_shelly">
+   <p>シェリーには、食事と合わせて飲むもの、また食後の余韻を楽しみながら飲むものがあります。<br>ここでは当店自慢の料理の一部を、相性ぴったりなシェリーとともにご紹介いたします。
+   <br>ここで紹介する組み合わせは、数ある組み合わせの中のほんの一部であり、<br>紹介するもの以外にもたくさんの素晴らしい組み合わせがあります。<br>お客様ご自信でも多くの組み合わせを試していただき、<br>シェリーと料理がおりなす極上のハーモニーを、堪能してください。</p>
+   </div>
+  
+  
+  
+  <div class="menu_list">
+  
+  <div class="food_list  clearfix">
+    
+        
+        <div class="menu_list_title"><p><strong><em>メニューリスト</em></strong></p></div>
+        
+        
+        
+        
+        <a href="#jump_01">
+          <div class="food_list_01">
+        <div class="food_name_01"><p>前菜の盛り合わせ</p></div>
+            <div class="food_value_01"><em><p>・・・￥700</p></em></div>
+              </div><!--food_list_01-->
+         </a>
+         
+         
+  
+    <a href="#jump_02">
+          <div class="food_list_02">
+        <div class="food_name_02"><p>イベリコベジョータ</p></div>
+            <div class="food_value_02"><em><p>・・・￥1,000</p></em></div>
+              </div><!--food_list_02-->
+         </a>
+         
+  
+    <a href="#jump_03">
+          <div class="food_list_03">
+        <div class="food_name_03"><p>トルティージャ</p></div>
+            <div class="food_value_03"><em><p>・・・￥1,000</p></em></div>
+              </div><!--food_list_03-->
+         </a>
+         
+  
+    <a href="#jump_04">
+          <div class="food_list_04">
+        <div class="food_name_04"><p>マッシュルームのアヒージョ</p></div>
+            <div class="food_value_04"><em><p>・・・￥1,200</p></em></div>
+              </div><!--food_list_04-->
+         </a>
+         
+  
+    <a href="#jump_05">
+          <div class="food_list_05">
+        <div class="food_name_05"><p>蝦夷鹿のロースト</p></div>
+            <div class="food_value_05"><em><p>・・・￥1,500</p></em></div>
+              </div><!--food_list_05-->
+         </a>
+         
+  
+    <a href="#jump_06">
+          <div class="food_list_06">
+        <div class="food_name_06"><p>魚介のパエリア</p></div>
+            <div class="food_value_06"><em><p>・・・￥1,800</p></em></div>
+              </div><!--food_list_06-->
+         </a>
+         
+         
+         <a href="#jump_07">
+          <div class="food_list_07">
+        <div class="food_name_07"><p>シェリーがけアイスクリーム</p></div>
+            <div class="food_value_07"><em><p>・・・￥500</p></em></div>
+              </div><!--food_list_07-->
+         </a>
+  
+    </div><!--food_list  clearfix-->
+  </div><!--menu_list-->
+  
+  
+    
+        
+        
+        <div class="menu_right" id="jump_01">
+  
+      <div class="food_title_right">
+                <p><strong>前菜の盛り合わせ</strong><em>  ￥700</em></p>
+              </div><!--food_title_right-->
+  
+      <div class="food_01"><a href="#">
+        <img src="images/pic_food_01.png" width="316" height="246" alt="前菜の盛り合せ"></a>
+      </div><!--food_01-->
+  
+      <div class="food_right_content_01">
+      
+        <div class="food_01_txt">
+        <p>前菜の盛り合せです。イワシのマリネやハモンセラーノなど、お肉や魚が盛り合わせてあるので、フィノのような万能型のシェリーと一緒にお楽しみください。</p>
+        </div><!--food_01_txt-->
+              
+                <div class="osusume_food">
+                    <p><strong>・・・この料理に合うシェリーのジャンル・・・</strong></p>
+                </div><!--osusume_food-->
+              
+              
+              
+                <div class="bin_11">
+                  <img  src="images/bin.png" width="51" height="12" alt="ビン">
+                </div>
+              
+                <div class="osusume_shelly_name">
+                  <p><em><a href="shelly.html#jump_s_02">フィノ</a></em></p>
+                </div><!--osusume_shelly_name-->
+    
+      </div><!--food_right_content_01-->
+      
+    </div><!--menu_right-->
+        
+        
+          
+        
+        
+        
+        <div class="menu_left" id="jump_02">
+  
+      <div class="food_title_left">
+                <p><strong>イベリコベジョータ</strong><em>  ￥1,000</em></p>
+              </div><!--food_title_left-->
+  
+      
+              <div class="food_left_content_01">
+              
+                <div class="food_02_txt">
+          <p>団栗で育った豚のハモン。油をリセットしてお酒を楽しむ場合はマンサニージャ、油の旨みと同調するお酒を楽しむ場合はアモンティリャードがおすすめ。</p>
+                    </div><!--food_02_txt-->
+  
+        <div class="osusume_food">
+                  <p><strong>・・・この料理に合うシェリーのジャンル・・・</strong></p>
+                </div><!--osusume_food-->
+              
+              
+              <div class="bin_12_01">
+                  <img  src="images/bin.png" width="51" height="12" alt="ビン">
+                </div>
+                
+              <div class="bin_12_02">
+                  <img  src="images/bin.png" width="51" height="12" alt="ビン">
+                </div>
+              
+              
+                <div class="osusume_shelly_name">
+                  <p><em><a href="shelly.html#jump_s_01">マンサニージャ</a></em></p>
+                  <p><em><a href="shelly.html#jump_s_03">アモンティリャード</a></em></p>
+                </div><!--osusume_shelly_name-->
+              
+              </div><!--food_left_content_01-->
+              
+      <div class="food_02"><a href="#">
+        <img src="images/pic_food_02.png" width="316" height="246" alt="ベジョータ"></a>
+      </div><!--food_02-->
+  
+    </div><!--menu_left-->
+        
+        
+        
+  
+  
+  
+    <div class="menu_right" id="jump_03">
+  
+      <div class="food_title_right">
+                <p><strong>トルティージャ</strong><em>  ￥1,000</em></p>
+              </div><!--food_title_right-->
+  
+      <div class="food_01"><a href="#">
+        <img src="images/pic_food_03.png" width="316" height="246" alt="トルティージャ"></a>
+      </div><!--food_01-->
+        
+              <div class="food_right_content_01">
+                    
+        <div class="food_01_txt">
+          <p>スペイン風オムレツ。中にはジャガイモ等が包まれております。そのままでもおいしく召し上がれますが、お好みで一緒にお出しするソースをかけてください。</p>
+                    </div><!--food_01_txt-->
+  
+        <div class="osusume_food">
+                  <p><strong>・・・この料理に合うシェリーのジャンル・・・</strong></p>
+                </div><!--osusume_food-->
+              
+              
+              <div class="bin_13">
+                  <img  src="images/bin.png" width="51" height="12" alt="ビン">
+                </div>
+              
+                <div class="osusume_shelly_name">
+                    <p><em><a href="shelly.html#jump_s_04">オロロソ</a></em></p>
+                  
+                </div><!--osusume_shelly_name-->
+                    
+              </div><!--food_right_content_01-->
+  
+    </div><!--menu_right-->
+        
+        
+          
+        
+        
+        
+        <div class="menu_left" id="jump_04">
+  
+      <div class="food_title_left">
+                <p><strong>マッシュルームのアヒージョ</strong><em>  ￥1,200</em></p>
+              </div><!--food_title_left-->
+  
+      <div class="food_left_content_01">
+  
+        <div class="food_02_txt">
+          <p>マッシュルームを使ったアヒージョです。お申し付けいただければバケットもご一緒にお出しするので、余ったソースをつけてお召し上がりください。</p>
+                    </div><!--food_02_txt-->
+              
+                <div class="osusume_food">
+                  <p><strong>・・・この料理に合うシェリーのジャンル・・・</strong></p>
+                </div><!--osusume_food-->
+              
+              
+              <div class="bin_14">
+                  <img  src="images/bin.png" width="51" height="12" alt="ビン">
+                </div>
+              
+        <div class="osusume_shelly_name">
+                  <p><em><a href="shelly.html#jump_s_03">アモンティリャード</a></em></p>
+                </div><!--osusume_shelly_name-->
+      </div><!--food_left_content_01-->
+  
+      <div class="food_02"><a href="#">
+        <img src="images/pic_food_04.png" width="316" height="246" alt="アヒージョ"></a>
+      </div><!--food_02-->
+  
+    </div><!--menu_left-->
+        
+        
+        
+  
+  
+  
+    <div class="menu_right"  id="jump_05">
+  
+      <div class="food_title_right">
+                <p><strong>蝦夷鹿のロースト</strong><em>  ￥2,000</em></p>
+              </div><!--food_title_right-->
+  
+      <div class="food_01"><a href="#">
+        <img src="images/pic_food_05.png" width="316" height="246" alt="エゾ鹿"></a>
+      </div><!--food_01-->
+              
+              <div class="food_right_content_01">
+  
+        <div class="food_01_txt">
+          <p>蝦夷鹿のローストです。<br>お肉にかかっているソースは、<br>ペドロ・ヒメネスという<br>甘口のシェリー酒を煮詰めて作っております。</p>
+                    </div><!--food_01_txt-->
+  
+        <div class="osusume_food">
+                  <p><strong>・・・この料理に合うシェリーのジャンル・・・</strong></p>
+                </div><!--osusume_food-->
+              
+              <div class="bin_15">
+                  <img  src="images/bin.png" width="51" height="12" alt="ビン">
+                </div>
+              
+        <div class="osusume_shelly_name">
+                  <p><em><a href="shelly.html#jump_s_05">パロ・コルタド</a></em></p>
+                </div><!--osusume_shelly_name-->
+    
+        
+          </div><!--food_right_content_01-->
+        </div><!--menu_right-->
+        
+        
+          
+        
+        
+        
+        <div class="menu_left"  id="jump_06">
+  
+      <div class="food_title_left">
+                <p><strong>魚介のパエリア</strong><em>  ￥2,500</em></p>
+              </div><!--food_title_left-->
+              
+              <div class="food_left_content_01">
+  
+        <div class="food_02_txt">
+          <p>海の幸をふんだんに使ったパエリアです。器が熱いのでお気をつけください。<br>海の幸は日によって変わるので、お気軽にお尋ねください。</p>
+                </div><!--food_02_txt-->
+              
+                <div class="osusume_food">
+                  <p><strong>・・・この料理に合うシェリーのジャンル・・・</strong></p>
+                </div><!--osusume_food-->
+              
+              <div class="bin_16">
+                  <img  src="images/bin.png" width="51" height="12" alt="ビン">
+                </div>
+              
+        <div class="osusume_shelly_name">
+                  <p><em><a href="shelly.html#jump_s_06">ミディアムシェリー</a></em></p>
+                </div><!--osusume_shelly_name-->
+      
+              </div><!--food_left_content_01-->
+                          
+      <div class="food_02"><a href="#">
+        <img src="images/pic_food_06.png" width="316" height="246" alt="パエリア"></a>
+      </div>
+  
+    </div><!--menu_left-->      
+        
+  
+  
+  
+  
+  
+  
+    <div class="menu_right"  id="jump_07">
+  
+      <div class="food_title_right">
+                <p><strong>シェリーがけアイスクリーム</strong><em>  ￥500</em></p>
+              </div>
+  
+      <div class="food_01"><a href="#">
+        <img src="images/pic_food_07.png" width="316" height="246" alt="アイス"></a>
+      </div>
+  
+      <div class="food_right_content_01">
+  
+        <div class="food_01_txt">
+          <p>当店一番人気のデザートです。<br>ヴァニラアイスクリームに、<br>極甘口のシェリー、<br>ペドロ・ヒメネスをかけておめしあがりください。</p></div><!--food_01_txt-->
+              
+              
+              <div class="osusume_food">
+                  <p><strong>・・・この料理に合うシェリーのジャンル・・・</strong></p>
+                </div><!--osusume_food-->
+              
+              <div class="bin_17">
+                  <img  src="images/bin.png" width="51" height="12" alt="ビン">
+                </div>
+              
+        <div class="osusume_shelly_name">
+                  <p><em><a href="shelly.html#jump_s_09">ペドロ・ヒメネス</a></em></p>
+                </div><!--osusume_shelly_name-->    
+              
+              </div><!--food_right_content_01-->
+    
+  
+    </div><!--menu_right-->      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+<div class="pagetop"><a href="#wrap">トップへ戻る</a></div>
+
+</div><!--content-->
+
+
+<footer>
+  <div class="footer">
+    <div class="footer_btn">
+      <div class="faq">
+        <p><a href="mikansei.html">よくあるご質問</a></p>
+      </div>
+
+      <div class="bar_01">
+        <p>|</p>
+      </div>
+
+      <div class="sitemap">
+        <p><a href="mikansei.html">サイトマップ</a></p>
+      </div>
+
+      <div class="bar_02">
+        <p>|</p>
+      </div>
+
+      <div class="mail">
+        <p><a href="mikansei.html">お問い合わせ</a></p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+  
+
+ 
+
+    
+        
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,870 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0; padding:0;}
+/*--------------------------------------クリアフィックス*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+/* IE7,MacIE5 */
+.clearfix {
+  display: inline-block;
+}
+/* WinIE6 below, Exclude MacIE5 \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/*--------------------------------------クリアフィックス*/
+
+/*---------------------------マウスオーバー設定*/
+/*--------------------全般*/
+a:link { color:#8b030a;}
+a:visited { color:#8b030a;}
+a:hover { color:#8b030a;font-size:16pt;font-weight:bold;}
+a:active { color:#8b030a;}
+a{text-decoration:none;}
+
+/*----------オススメ料理へ*/
+.menu_shelly_kabu a:link { color:#8b030a;}
+.menu_shelly_kabu a:visited { color:#8b030a;}
+.menu_shelly_kabu a:hover { color:#8b030a;font-size:12pt;font-weight:bold;}
+.menu_shelly_kabu a:active { color:#8b030a;}
+.menu_shelly_kabu a{text-decoration:none;}
+
+/*---------------------フッター関連のaタグ*/
+.footer_btn a:link { color:#ffc400;}
+.footer_btn a:visited { color:#ffc400;}
+.footer_btn a:hover { color:#ffc400;font-size:9pt;font-weight:normal;}
+.footer_btn a:active { color:#ffc400;}
+.footer_btn a{text-decoration:none;}
+
+
+
+#b_top{  
+    margin: 0;  
+    padding: 100px 0 50px 0;  
+background-color:#ffc400;
+background-image:url(../images/spaintile.png);
+background-position:0 -700px;/*------------背景模様位置設定-------------------*/
+background-repeat: no-repeat;
+}
+
+
+#b_food{  
+    margin: 0;  
+    padding: 100px 0 50px 0;  
+background-color:#ffc400;
+background-image:url(../images/spaintile_04.png);
+background-position:0 -20px;/*------------背景模様位置設定-------------------*/
+background-attachment:fixed; /*-----------------背景画像固定------------------*/
+}
+
+body{
+-moz-osx-font-smoothing: antialiased;}
+
+
+
+
+
+/*----------------
+* html body{  
+    overflow: hidden;  
+}
+----------------------IE6.0用(命令直前の*は消さない)--------------*/
+
+
+
+.header{  
+    position: fixed !important;  
+    position: absolute;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 120px;  
+    background-color:#8b030a;  
+    color: #fff;/*-------ディブ内の文字色---------*/
+z-index:5;
+}  
+
+
+.footer{  
+    position: fixed !important;  
+    position: absolute;  
+    bottom: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 120px;  
+    background-color:#8b030a;  
+    color: #fff;  
+z-index:5;
+} 
+
+
+.content{  
+    height: 100%;  
+    overflow: auto;/*-----はみ出したらスクロール-------*/
+}
+.haikei{  
+    height:800px;/*-----はみ出したらスクロール-------*/
+}
+/*----------------
+* html div.content{  
+    height: 100%;  
+    overflow: auto;  
+}  
+----------------------IE6.0用(命令直前の*は消さない)--------------*/
+
+
+
+/*----------------------top関連--------------------------*/
+
+.top_pic{width:527px;float:left;
+margin:0 0 0 50px;
+}/*------------------------------トップ画---------*/
+
+
+/*------------------------シルエットたち---------*/
+.top_flamenco{width:141px;float:left;
+position: fixed !important; 
+position:absolute;
+bottom: 16%; 
+left:1000px;
+z-index:10;
+}
+
+.veneciandoor{width:144px;float:left;
+position: fixed !important; 
+position:absolute;
+bottom: 15%; 
+left:1100px;
+z-index:10;
+}
+
+.cook{width:141px;float:left;
+position: fixed !important; 
+position:absolute;
+bottom: 15%; 
+left:1100px;
+z-index:10;
+}
+
+.waiter{width:135px;height:323px;
+position: fixed !important; 
+position:absolute;
+bottom: 15%; 
+left:120px;
+z-index:10;
+}
+
+.backpacker{width:126px;height:290px;
+position: fixed !important; 
+position:absolute;
+bottom: 15%; 
+left:120px;
+z-index:10;
+}
+
+.show_flamenco{width:206px;height:324px;
+position: fixed !important; 
+position:absolute;
+bottom: 15%; 
+left:50px;
+z-index:10;
+}
+
+/*------------------------シルエットたち---------*/
+
+/*-----------文言たち------*/
+.mongon_01{width:296px;
+position:absolute;
+top:350px;
+left:600px;}
+
+.mongon_02{width:296px;
+position:absolute;
+top:445px;
+left:680px;}
+/*-----------文言たち------*/
+
+
+/*---------ロゴ--------*/
+.logo{width:231px; height:48px;
+	float:left;
+	margin:25px 0px 0 30px;}
+
+
+
+
+/*.gn{width:1024px;
+	float:left;
+	margin:75px 0 0 30px;
+	}*/
+/*-------------------------ポジション50%からスタート、その後ディブの半分を左に移動させ中央調整	*/
+.gn{width:818px;
+	position:absolute;
+	top:75px;
+	left:50%;
+	margin:0 0 0 -399px;/*グローバルナビの半分分、左へ移動。*/
+	}
+
+
+.btn_01{width:64px; height:31px; float:left;margin:0 70px 0 0;background-image:url(../images/btn_home.png);}
+.btn_02{width:73px; height:32px; float:left;margin:0 70px 0 0;background-image:url(../images/btn_tenpo.png);}
+.btn_03{width:52px; height:35px; float:left;margin:0 70px 0 0;background-image:url(../images/btn_shelly.png);}
+.btn_04{width:57px; height:32px; float:left;margin:0 70px 0 0;background-image:url(../images/btn_food.png);}
+.btn_05{width:128px; height:34px; float:left;margin:0 70px 0 0;background-image:url(../images/btn_show.png);}
+.btn_06{width:74px; height:32px; float:left;margin:0 0 0 0;background-image:url(../images/btn_access.png);}
+
+
+.btn_01_on{width:113px; height:110px;position:absolute;top:-53px;left:-20px;visibility:hidden;}
+.btn_02_on{width:113px; height:110px;position:absolute;top:-52px;left:117px;visibility:hidden;}
+.btn_03_on{width:113px; height:110px;position:absolute;top:-54px;left:246px;visibility:hidden;}
+.btn_04_on{width:113px; height:110px;position:absolute;top:-53px;left:371px;visibility:hidden;}
+.btn_05_on{width:113px; height:110px;position:absolute;top:-51px;left:523px;visibility:hidden;}
+.btn_06_on{width:113px; height:110px;position:absolute;top:-50px;left:705px;visibility:hidden;}
+
+/*---------------------------------ホバーしたときの状況*/
+.btn_01:hover + .btn_01_on{visibility:visible;}
+.btn_01_on:hover{visibility:visible;}
+
+.btn_02:hover + .btn_02_on{visibility:visible;}
+.btn_02_on:hover{visibility:visible;}
+
+.btn_03:hover + .btn_03_on{visibility:visible;}
+.btn_03_on:hover{visibility:visible;}
+
+.btn_04:hover + .btn_04_on{visibility:visible;}
+.btn_04_on:hover{visibility:visible;}
+
+.btn_05:hover + .btn_05_on{visibility:visible;}
+.btn_05_on:hover{visibility:visible;}
+
+.btn_06:hover + .btn_06_on{visibility:visible;}
+.btn_06_on:hover{visibility:visible;}
+/*---------------------------------ホバーしたときの状況*/
+
+
+
+
+
+
+
+
+
+.telephone{width:216px;
+	position:absolute;
+	top:25%;
+	left:75%;
+	}
+
+
+.tenpo_info{width:258px;
+margin:50px auto 0 auto;}
+
+.tienda{width:149px;
+margin:50px auto 0 auto;}
+
+.shelly_menu{width:311px;
+margin:50px auto 0 auto;}
+
+.food_menu{width:349px;
+margin:50px auto 0 auto;}
+
+.show{width:258px;
+margin:50px auto 0 auto;}
+
+.access_map{width:149px;
+margin:50px auto 0 auto;}
+
+
+
+
+
+/*---------------------------------------フッター関連の調整------------------------------------------*/
+.faq{float:left;margin:0 30px 0 0;}
+
+.sitemap{float:left;margin:0 30px 0 0;}
+
+.mail{float:left;margin:0 30px 0 0;}
+
+.bar_01{float:left;margin:0 30px 0 0;}
+
+.bar_02{float:left;margin:0 30px 0 0;}
+
+.footer_btn{margin:70px 0 0 900px;}
+
+.footer_btn p{color:#ffc400;font-size:9pt;font-weight:normal;}
+
+
+
+
+
+
+
+/*----------------------------------------店舗情報関連-------------------------------------------------------*/
+.tenpo_welcome{width: 800px;
+margin:20px auto 0 auto;
+}
+
+.tenpo_welcome p{font-size: 20px;
+text-align: center;
+line-height: 30px;
+}
+
+.tenpo_info{width: 500px;margin: 100px auto 0 auto;}
+
+.info_title_01 p{text-align: center;font-size: 18px;}
+.info_title_02 p{text-align: center;font-size: 36px;}
+
+.info_content{width: 400px;height: 460px;
+margin: 30px auto 0px auto;
+padding: 20px 0 0 0;
+background-image:url(../images/kami_haikei.jpg);
+background-position:0 -200px;/*------------背景模様位置設定-------------------*/
+background-repeat: no-repeat;
+}
+
+
+.info_txt_01{margin:30px 0 0 0;}
+.info_txt_02{margin:10px 0 0 0;}
+.info_txt_03{margin:40px 0 0 0;}
+.info_txt_04{margin:10px 0 0 0;}
+
+.info_txt_01 p,
+.info_txt_03 p{text-align: center;font-size: 20px;}
+
+.info_txt_02 p,
+.info_txt_04 p{text-align: center;font-size: 18px;}
+
+
+.tennnai{width: 500px;margin:150px auto 0 auto;}
+.tennnai_hukei{margin: 0px 0 30px 0;}
+.tennnai_hukei p{text-align: center;font-size: 24px;}
+
+.tennnai_pic_01{width: 512px ;height:294px;
+margin: 0 0 120px 0;
+}
+
+.card_icon_01,
+.card_icon_02,
+.card_icon_03{width: 50px; height: 31px;
+float: left;
+margin: 20px 0px 0 65px;}
+
+
+
+/*----------------------------------------shelly関係のページ-----------------------------------------------*/
+
+/*--------------左右共通用---------*/
+
+.menu_shelly{/*background-color:#00C;*/
+width:850px;
+height:380px;
+margin:0px auto 0 auto;
+padding:130px 50px 90px 50px;}/*ジャンプ後タイトルが隠れないように上パディング多目*//*共通*/
+
+.setsumei_shelly p{text-align:center;
+line-height:40px;
+margin :40px 0 50px 0}/*共通*/
+
+.shelly_01{width:316px;
+float:left;}/*共通*/
+
+
+.shelly_01_txt{width:500px;
+margin:0px auto 0 auto;
+text-align:center;
+}/*共通*/
+
+
+.shelly_01_txt p{
+line-height:27px;
+font-size:17px;}/*共通*/
+
+.shelly_title{margin:0 auto 20px auto;}/*共通*/
+
+.shelly_title p{text-align:center;font-size:30px;}/*共通*/
+
+.menu_shelly_kabu{width:850px;height:180px;
+margin:10px 0 0 0;
+position:relative;z-index:0;
+/*background-color:black;*/}/*仮背景色・ブラック*//*共通*/
+
+.daihyo_shelly{width:450px;position:absolute;
+top:30px;left:200px;}/*200で中央調整*//*共通*/
+.daihyo_shelly p{text-align:center;font-size:18px;
+/*background-color:orange;*/}/*仮背景色・オレンジ*//*共通*/
+
+
+.shelly_list{width:700px;height:335px;
+margin:10px auto 0 auto;
+padding:10px;
+background-image:url(../images/kami_haikei.jpg);
+background-position:0 365px;}/*-------------330+35の値*//*共通*/
+
+
+.food_list{position:relative;}
+.bene_01{position:absolute;top:-10px;left:30px;}
+.bene_02{position:absolute;top:-10px;left:650px;}
+
+
+.shelly_list_title{margin: 40px 0 50px 0;}/*共通*/
+.shelly_list_title p{text-align: center;}/*共通*/
+
+.shelly_list_01,.shelly_list_02,.shelly_list_03,.shelly_list_04,.shelly_list_05{width: 480px;height: 20px;margin: 0 auto 20px auto;}/*共通*/
+
+
+
+.shelly_name_01{float:left;margin:0px 80px 0 0;}/*共通*/
+.shelly_name_06{float:left;margin:0px 0 0 0;}/*共通*/
+
+.shelly_name_02{clear:both;float:left;margin:0 80px 0 0;}/*共通*/
+.shelly_name_07{float:left;}/*共通*/
+
+.shelly_name_03{clear:both;float:left;margin:0 80px 0 0;}/*共通*/
+.shelly_name_08{float:left;}/*共通*/
+
+.shelly_name_04{clear:both;float:left;margin:0 80px 0 0;}/*共通*/
+.shelly_name_09{float:left;}/*共通*/
+
+.shelly_name_05{clear:both;float:left;margin:0 80px 0 0;}/*共通*/
+.shelly_name_10{float:left;}/*共通*/
+
+
+
+
+.shelly_name_01 p,
+.shelly_name_02 p,
+.shelly_name_03 p,
+.shelly_name_04 p,
+.shelly_name_05 p,
+.shelly_name_06 p,
+.shelly_name_07 p,
+.shelly_name_08 p,
+.shelly_name_09 p,
+.shelly_name_10 p{text-align:center;}/*共通*/
+
+.shelly_name_01,
+.shelly_name_02,
+.shelly_name_03,
+.shelly_name_04,
+.shelly_name_05,
+.shelly_name_06,
+.shelly_name_07,
+.shelly_name_08,
+.shelly_name_09,
+.shelly_name_10{width:200px;}/*共通*/
+
+/*--------------左右共通用---------*/
+
+/*--------------左が画像---------*/
+
+.pic_shelly_left{width:110px;height:180px;float:left;margin:0 0 0 170px;}
+.shelly_name_left{width:250px;float:left;margin:0px 0px 0 0px;position:absolute;
+top:135px; left:10px;
+/*background-color:white;*/}/*左マージン115pxで0距離*//*仮背景色・ホワイト*/
+
+.shelly_name_left p{font-size:16px;text-align:center;line-height:12px}
+
+.shelly_content_left{float:left;width:285px;height:180px;position:relative;/*background-color:red;*/}/*仮背景色・レッド*/
+.shelly_content_right{float:left;width:565px;height:180px;/*background-color:green;*/}/*仮背景色・グリーン*/
+
+.other_shelly_right_01{width:400px;
+margin:65px 0 0 0px;
+/*background-color:yellow;*/}/*仮背景色・イエロー*/
+.other_shelly_right_01 p{text-align: center;font-size:19px;}
+
+.other_shelly_right_02{width:400px;
+margin:3px 0 0 0px;
+/*background-color:blue;*/}/*仮背景色・ブルー*/
+
+.other_shelly_right_02 p{text-align: center;font-size:19px;}
+
+.other_shelly_right_03{width:400px;
+margin:3px 0 0 0px;}
+.other_shelly_right_03 p{text-align: center;font-size:19px;
+/*background-color:gray;*/}/*仮背景色・グレイ*/
+
+
+.osusume_shelly_right{
+width:450px;
+/*position:absolute;top:160px;left:200px;------真ん中調整(仮)*/
+position:absolute;top:150px;left:450px;
+/*background-color:pink;*/}/*仮背景色・ピンク*/
+
+.osusume_shelly_right p{text-align:center;font-size:15px;}
+
+/*--------------左が画像---------*/
+
+/*--------------右が画像---------*/
+
+.pic_shelly_right{width:110px;height:180px;float:left;margin:0 170 0 0px;}
+.shelly_name_left_2{width:250px;float:left;margin:0px 0px 0 0px;position:absolute;
+top:135px; left:10px;
+/*background-color:white;*/}/*左マージン115pxで0距離*//*仮背景色・ホワイト*/
+
+.shelly_name_left_2 p{font-size:16px;text-align:center;line-height:12px}
+
+.shelly_content_left_2{float:left;width:285px;height:180px;position:relative;/*background-color:red;*/}/*仮背景色・レッド*/
+.shelly_content_right_2{float:left;width:565px;height:180px;/*background-color:green;*/}/*仮背景色・グリーン*/
+
+.other_shelly_left_01{width:400px;
+margin:65px 0 0 165px;
+/*background-color:yellow;*/}/*仮背景色・イエロー*/
+.other_shelly_left_01 p{text-align: center;font-size:19px;}
+
+.other_shelly_left_02{width:400px;
+margin:3px 0 0 165px;
+/*background-color:blue;*/}/*仮背景色・ブルー*/
+
+.other_shelly_left_02 p{text-align: center;font-size:19px;}
+
+.other_shelly_left_03{width:400px;
+margin:3px 0 0 165px;}
+.other_shelly_left_03 p{text-align: center;font-size:19px;
+/*background-color:gray;*/}/*仮背景色・グレイ*/
+
+
+.osusume_shelly_left{
+width:450px;
+/*position:absolute;top:160px;left:200px;------真ん中調整(仮)*/
+position:absolute;top:150px;left:0px;
+/*background-color:pink;*/}/*仮背景色・ピンク*/
+
+.osusume_shelly_left p{text-align:center;font-size:15px;}
+
+/*--------------右が画像---------*/
+
+/*---------写真の名前位置調整用----（左右用より必ず下に書いておく・形が崩れてしまうため）-----*/
+.chosei_01{width:250px;float:left;margin:0px 0px 0 0px;position:absolute;
+top:150px; left:45px;}
+.chosei_03{width:250px;float:left;margin:0px 0px 0 0px;position:absolute;
+top:140px; left:5px;}
+.chosei_05{width:250px;float:left;margin:0px 0px 0 0px;position:absolute;
+top:150px; left:5px;}
+.chosei_07{width:250px;float:left;margin:0px 0px 0 0px;position:absolute;
+top:150px; left:-5px;}
+.chosei_09{width:250px;float:left;margin:0px 0px 0 0px;position:absolute;
+top:150px; left:10px;}
+
+.chosei_02{width:250px;float:left;margin:0px 0px 0 0px;position:absolute;
+top:150px; left:-20px;}
+.chosei_04{width:250px;float:left;margin:0px 0px 0 0px;position:absolute;
+top:150px; left:30px;}
+.chosei_06{width:250px;float:left;margin:0px 0px 0 0px;position:absolute;
+top:150px; left:-25px;}
+.chosei_08{width:250px;float:left;margin:0px 0px 0 0px;position:absolute;
+top:150px; left:0px;}
+.chosei_10{width:250px;float:left;margin:0px 0px 0 0px;position:absolute;
+top:150px; left:35px;}
+
+
+
+
+.fruite{margin:100px 0 0 0;}
+.fruite p{text-align: center;line-height: 50px;}
+
+.to_shelly{margin: 100px 0 0 0;}
+.to_shelly p{text-align: center;}
+
+
+/*------------------------------------------foodのメニュー関係のページ--------------------------------------*/
+.menu_right{/*background-color:#00C;*/
+width:850px;
+height:380px;
+margin:0px auto 0 auto;
+padding:170px 50px 60px 50px;}/*ジャンプ後タイトルが隠れないように上パディング多目*/
+
+.food_01{width:316px;
+float:left;margin:0 0 0 50px;}
+
+.food_01_txt{width:300px;margin:0 auto 0 auto;line-height:30px;
+/*float:left;*/
+text-align:center;/*background-color: yellow;*/}/*仮背景・黄*/
+
+.food_title_right{margin:0 auto 25px auto;}
+
+.food_title_right p{text-align:center;font-size:24px;}
+
+
+
+
+
+
+
+.menu_left{/*background-color:#00C;*/
+width:850px;
+height:380px;
+margin:0px auto 0 auto;
+padding:170px 50px 60px 50px;}/*ジャンプ後タイトルが隠れないように上パディング多目*/
+
+.food_02{width:316px;
+float:left;}
+
+.food_02_txt{width:300px;margin:0 auto 0 auto;line-height:30px;
+/*float:left;*/
+text-align:center;/*background-color: yellow;*/}/*仮背景・黄*/
+
+.food_title_left{margin:0 auto 30px auto;}
+
+.food_title_left p{text-align:center;font-size:24px;}
+
+
+
+
+
+/*---------------------------------------------メニューリストの中身---------*/
+.menu_list{width:700px;height:335px;
+margin:10px auto 0 auto;
+padding:10px;
+background-image:url(../images/kami_haikei.jpg);
+background-position:0 365px;}/*-------------330+35の値*//*共通*/
+
+.menu_list_title{margin: 20px 0 20px 0;}
+.menu_list_title p{text-align: center;}
+
+.food_name_01{float:left;}
+.food_value_01{float:left;}
+
+.food_name_02{clear:both;float:left;}
+.food_value_02{float:left;}
+
+.food_name_03{clear:both;float:left;}
+.food_value_03{float:left;}
+
+.food_name_04{clear:both;float:left;}
+.food_value_04{float:left;}
+
+.food_name_05{clear:both;float:left;}
+.food_value_05{float:left;}
+
+.food_name_06{clear:both;float:left;}
+.food_value_06{float:left;}
+
+.food_name_07{clear:both;float:left;}
+.food_value_07{float:left;}
+
+.food_name_08{clear:both;float:left;}
+.food_value_08{float:left;}
+
+.food_name_09{clear:both;float:left;}
+.food_value_09{float:left;}
+
+.food_name_10{clear:both;float:left;}
+.food_value_10{float:left;}
+
+
+
+.food_name_01 p,
+.food_name_02 p,
+.food_name_03 p,
+.food_name_04 p,
+.food_name_05 p,
+.food_name_06 p,
+.food_name_07 p,
+.food_name_08 p,
+.food_name_09 p,
+.food_name_10 p{text-align:center;}
+
+.food_name_01,
+.food_name_02,
+.food_name_03,
+.food_name_04,
+.food_name_05,
+.food_name_06,
+.food_name_07,
+.food_name_08,
+.food_name_09,
+.food_name_10{width:400px; margin:8px;}
+
+
+.food_right_content_01{float: left;width:450px;margin:0px 15px 0 15px; 
+position: relative;
+/*background-color: black;*/}/*仮背景・黒*/
+
+.osusume_food{clear:both;width:450px;margin: 45px auto 8px auto;
+/*background-color:red;*/}/*仮背景・赤*/
+.osusume_food p{text-align:center;font-size:16px;}
+
+.osusume_shelly_name{width:300px;text-align:center;margin: 0px auto 0 auto;
+line-height:20px;
+/*background-color:green;*/}/*仮背景・緑*/
+.osusume_shelly_name p{font-size:20px;}
+
+
+.food_left_content_01{float: left;width:450px;margin:0px 15px 0 15px; 
+position: relative;
+/*background-color: black;*/}/*仮背景・黒*/
+
+
+
+/*----------------------binアイコン----------------------*/
+
+.bin_01{width:51px;height:12px;position:absolute;top:150px;left:470px;}
+.bin_03{width:51px;height:12px;position:absolute;top:150px;left:455px;}
+.bin_05{width:51px;height:12px;position:absolute;top:150px;left:470px;}
+.bin_07{width:51px;height:12px;position:absolute;top:150px;left:495px;}
+.bin_09{width:51px;height:12px;position:absolute;top:150px;left:465px;}
+
+.bin_02{width:51px;height:12px;position:absolute;top:150px;left:345px;}
+.bin_04{width:51px;height:12px;position:absolute;top:150px;left:350px;}
+.bin_06{width:51px;height:12px;position:absolute;top:150px;left:390px;}
+.bin_08{width:51px;height:12px;position:absolute;top:150px;left:360px;}
+.bin_10{width:51px;height:12px;position:absolute;top:150px;left:375px;}
+
+
+.bin_11{width:51px;height:12px;position:absolute;top:221px;left:134px;}
+.bin_12_01{width:51px;height:12px;position:absolute;top:221px;left:100px;}
+.bin_12_02{width:51px;height:12px;position:absolute;top:241px;left:80px;}
+.bin_13{width:51px;height:12px;position:absolute;top:221px;left:125px;}
+.bin_14{width:51px;height:12px;position:absolute;top:221px;left:80px;}
+.bin_15{width:51px;height:12px;position:absolute;top:221px;left:95px;}
+.bin_16{width:51px;height:12px;position:absolute;top:221px;left:80px;}
+.bin_17{width:51px;height:12px;position:absolute;top:221px;left:90px;}
+
+
+
+/*----------------------------map関連---------------------------*/
+.map{width:500px;height:280px;
+margin:10px auto 0 auto;
+background-image:url(../images/kami_haikei.jpg);
+background-position:0 365px;}/*-------------330+35の値*//*共通*/
+
+.address{width:500px;height:280px;
+margin:80px auto 0 auto;
+/*background-color:gray;*//*-----------仮背景・グレイ*/
+background-position:0 365px;}/*-------------330+35の値*//*共通*/
+
+.ad_01 p{font-size:18px;text-align:center;}
+.ad_02 p{font-size:36px;text-align:center;}
+.ad_03 p{font-size:18px;text-align:center;}
+.ad_04 p{font-size:18px;text-align:center;}
+
+.ad_01{margin:0 0 0 0;}
+.ad_02{margin:-10px 0 0 0;}
+.ad_03{margin:30px 0 0 0;}
+.ad_04{margin:30px 0 0 0;}
+
+
+
+/*----------------------------------------------------show関連*/
+.show_setsumei{margin:40px auto 200px auto;}
+.show_setsumei p{text-align:center;line-height: 40px;}
+
+.event_show{width:500px;
+margin:80px auto 0 auto;
+}
+
+
+.show_01,
+.show_02{margin:0 0 20px 0;}
+
+.show_01 p{font-size:18px;text-align:center;}
+.show_02 p{font-size:36px;text-align:center;}
+
+.show_pic{width: 500px; height: 299px;
+margin: 0 auto 100px auto;
+position:relative;
+}
+
+.show_mongon{width:400px; position:absolute;top:185px;left:0px;}
+.show_mongon p{text-align:center;font-size:26px;}
+
+.show_mongon_02{width:550px; position:absolute;top:240px;left:180px;}
+.show_mongon_02 p{text-align:center;font-size:30px;}
+
+
+
+.show_mongon_00{width:400px; position:absolute;top:180px;left:40px;}
+.show_mongon_00 p{text-align:center;font-size:26px;}
+
+.show_mongon_03{width:550px; position:absolute;top:230px;left:-20px;}
+.show_mongon_03 p{text-align:center;font-size:30px;}
+
+
+.flamenco_content{width: 800px;margin:0 auto 0 auto;}
+
+
+.show_left{float:left;width: 500px;margin:0 0 0 30px;}
+.show_left p{text-align:center;line-height: 30px;}
+
+.show_title_01{margin:10px 0 30px 0;}
+.show_title_01 p{font-size: 18pt;}
+
+.show_right{float:left;width: 250px;height: 360px;margin: 0 0 50px 0;}
+.show_right_pic{width: 250px; height: 340px;
+margin:0px 0 0px 50px;}
+
+.flamenco_schedule{clear: both;width: 420px;height:330px;
+margin: 0px auto 300px auto;
+padding: 30px 40px 0 40px;
+background-image:url(../images/kami_haikei.jpg);
+background-position:0 -350px;/*------------背景模様位置設定-------------------*/
+background-repeat: no-repeat;
+}
+
+
+.schedule_01{margin:0 auto 0 auto;}
+.schedule_01 p{text-align: center;font-size: 24px;}
+
+.schedule_02{margin: 30px 0 30px 0;}
+.schedule_02 p{text-align: center;}
+
+.schedule_03{margin: 0 0 30px 0;}
+.schedule_03 p{text-align: center;}
+
+.schedule_04,
+.schedule_04 p{text-align: center;font-size: 16px;line-height: 15px;}
+
+.flamenco_schedule_02{clear: both;width: 420px;height:330px;
+margin: 0px auto 100px auto;
+padding: 30px 40px 0 40px;
+background-image:url(../images/kami_haikei.jpg);
+background-position:0 -350px;/*------------背景模様位置設定-------------------*/
+background-repeat: no-repeat;
+}
+
+
+
+/*-------------------------------------------------未完部分*/
+.mikansei{margin: 50px 0 0 0;}
+.mikansei p{text-align: center;}
+
+.to_home{margin: 30px 0 30px 0;}
+.to_home p{text-align: center;}
+
+.mikan_pic{width:500px;margin:0 auto 0 auto;}
+
+
+
+
+
+/*------------------------------------------------------------------jquery用*/
+.pagetop {
+    width: 162px; height: 101px;
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    bottom: 150px;
+    left: 40px;
+		background:url(../images/to_top.png) no-repeat;
+		text-indent:100%;
+  	white-space:nowrap;
+		background-position: 0 -101px;
+}
+
+
+ 
+.pagetop:hover {
+ background-position: 0 0px; 
+/*background-image: url(../img/to_menu_after.png); 
+background-repeat: no-repeat;*/
+
+}

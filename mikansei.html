@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Casa de Amigos | スペインバル・カーサデアミーゴス web page not foundation</title>
+
+  <style>
+    @font-face {
+      font-family: 'aaa';
+       src: url(font/XANO-mincho-U32.otf);
+    }
+
+    p {
+      font-family: "aaa";
+      color: #8b030a;
+      font-size: 20px;
+      font-weight: 100;
+      /*-webkit-font-smoothing:none;*/
+       }
+
+  </style>
+
+<script>
+  $(document).ready(function() {
+      var pagetop = $('.pagetop');
+      $(window).scroll(function () {
+          if ($(this).scrollTop() > 100) {
+              pagetop.fadeIn();
+          } else {
+              pagetop.fadeOut();
+          }
+      });
+      pagetop.click(function () {
+          $('body, html').animate({ scrollTop: 400 }, 500);　//<!-----------------400にするとちょうどメニューの位置に-->
+          return false;
+      });
+  });
+</script>
+
+</head>
+
+<body id="b_food"> 
+
+  <div class="container">
+  
+  
+  <header>
+  <div class="header">
+  
+  <div class="logo">
+  <a href="top.html"><img src="images/logo.png" width="231" height="48" alt="ロゴ"></a>
+  </div><!--header-->
+  
+    <nav>
+      <div class="gn">
+        <div class="btn_01">
+                    <a href="top.html"><img src="images/btn_home.png" width="64" height="31" alt="ホーム"></a>
+                    </div>
+                    
+                    <div class="btn_02">
+                    <a href="tenpo.html"><img src="images/btn_tenpo.png" width="73" height="32" alt="店舗"></a>
+                    </div>
+                    
+                    <div class="btn_03">
+                    <a href="shelly.html"><img src="images/btn_shelly.png" width="52" height="35" alt="シェリー"></a>
+                    </div>
+                    
+                    <div class="btn_04">
+                    <a href="food.html"><img src="images/btn_food.png" width="57" height="32" alt="フード"></a>
+                    </div>
+                    
+                    <div class="btn_05">
+                    <a href="show.html"><img src="images/btn_show.png" width="128" height="33" alt="ショー"></a>
+                    </div>
+                    
+                    <div class="btn_06">
+                    <a href="access.html"><img src="images/btn_access.png" width="74" height="32" alt="アクセス"></a>
+                    </div>
+              </div><!-----------------------------------------------------gn-->
+         </nav>   
+               
+                    
+    <div class="telephone">
+          <img src="images/telephone.png" width="216" height="15" alt="電話番号">
+        </div>
+  
+  
+  
+  
+  
+  </div><!-- header -->
+  
+  </header>
+  
+  
+  <div class="content">
+  
+  <div class="mikansei">
+  <p>申し訳ありません。</p>
+  <p>このページは工事中です。</p>
+  </div>
+  
+  <div class="to_home">
+  <p><strong><a href="top.html">HOMEへ戻る</a></strong></p>
+  </div>
+  
+  <div class="mikan_pic">
+  <img src="images/mikan_pic.png" width="500" height="250" alt="サグラダファミリア">
+  </div>
+  
+  
+        
+    <div class="pagetop"><a href="#wrap">トップへ戻る</a></div>
+    
+    </div><!--content-->
+    
+    
+    <footer>
+      <div class="footer">
+        <div class="footer_btn">
+          <div class="faq">
+            <p><a href="mikansei.html">よくあるご質問</a></p>
+          </div>
+    
+          <div class="bar_01">
+            <p>|</p>
+          </div>
+    
+          <div class="sitemap">
+            <p><a href="mikansei.html">サイトマップ</a></p>
+          </div>
+    
+          <div class="bar_02">
+            <p>|</p>
+          </div>
+    
+          <div class="mail">
+            <p><a href="mikansei.html">お問い合わせ</a></p>
+          </div>
+    
+        </div>
+      </div>
+    </footer>
+    </div>
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    
+      
+    
+     
+    
+        
+            
+    
+    
+    
+    
+    
+    
+    
+
+
+      
+    
+
